@@ -1,13 +1,7 @@
-
-<h1>{{ title }}</h1>
-
-<button class="rojo" (click)="mostrarAlgo()">Mostrar</button>
-
-<div *ngIf="mostrarDiv">
-  <h3>Hola</h3>
+<div class="center">
+  <h1>{{ title }}</h1>
+  <app-user/>
 </div>
 
-<div *ngFor="let opcion of array">{{ opcion }}</div>
 
-<app-primer-componente [titulo]="title"></app-primer-componente>
 

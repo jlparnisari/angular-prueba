@@ -1,1 +1,8 @@
-<p>user works!</p>
+@if (isLoggedIn){
+    <h3>Bienvenido {{ username }}</h3>
+    <img class="avatar" src="https://github.com/jlparnisari.png" alt="avatar">
+} @else {
+    <p>Iniciar Sesión</p>
+}
+
+<app-games></app-games>
