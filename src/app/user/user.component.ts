@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GamesComponent } from '../games/games.component';
+import { takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-user',
@@ -11,6 +12,11 @@ import { GamesComponent } from '../games/games.component';
 })
 export class UserComponent {
  username = 'jlparnisari';
- isLoggedIn = true;
+ isLoggedIn = false;
+ isCerrarIn = true;
+
+ greet(){
+  alert('hola');
+ }
 
 }

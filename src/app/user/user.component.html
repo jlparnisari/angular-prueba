@@ -1,8 +1,13 @@
 @if (isLoggedIn){
     <h3>Bienvenido {{ username }}</h3>
-    <img class="avatar" src="https://github.com/jlparnisari.png" alt="avatar">
+    <img
+        (click)="greet()" 
+        class="avatar"
+        src="https://github.com/jlparnisari.png" alt="avatar">
+        <button (click)="isCerrarIn = false">Cerrar Sesion</button>
 } @else {
     <p>Iniciar Sesión</p>
+    <button (click)="isLoggedIn = true">Iniciar Sesion</button>
 }
 
 <app-games></app-games>
