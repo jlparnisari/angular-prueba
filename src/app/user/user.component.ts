@@ -1,22 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GamesComponent } from '../games/games.component';
 import { takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [CommonModule, GamesComponent],
+  imports: [CommonModule],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
 export class UserComponent {
  username = 'jlparnisari';
  isLoggedIn = false;
- isCerrarIn = true;
 
  greet(){
-  alert('hola');
+  alert(`Bienvenido ${this.username}`);
  }
 
 }

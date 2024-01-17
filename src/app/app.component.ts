@@ -13,5 +13,5 @@ import { UserComponent } from './user/user.component';
 export class AppComponent {
 
   @Output()
-  title = 'angular';
+  title = 'PRACTICA ANGULAR';
 }
